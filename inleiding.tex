@@ -1,0 +1,51 @@
+%%=============================================================================
+%% Inleiding
+%%=============================================================================
+
+\chapter{Inleiding}
+\label{ch:inleiding}
+
+Wat is blockchain? Blockchain is een technologie die het best kan vergeleken worden met een database. Het wordt dan ook vooral gebruikt om gevoelige data veilig op te slaan. Blockchain dook voor het eerst op in het Bitcoin whitepaper door \textcite{Nakamoto2008}, dit blijkt een alias te zijn voor een persoon of een groep en de echte ontwikkelaar is niet gekend bij naam. Uit dit document kan afgeleid worden dat het gaat om een enkel persoon maar dit is niet met zekerheid geweten.
+
+Blockchain is meteen ook de technologie achter het bekende Bitcoin. Het idee was om digitaal geld te kunnen transporteren van één partij naar een andere zonder de tussenkomst van een financiële instelling. Blockchain heeft dan ook het grote voordeel te werken met een peer-to-peer systeem wat waarschijnlijk raar klinkt voor een geld transport systeem aangezien banken werkten met een centraal systeem om veiligheid te garanderen. Dit heeft uiteraard ook vele nadelen zoals het integreren met andere platformen. Toch blijkt blockchain een veilige manier te zijn en dit door de manier van hoe blockchain werkt.
+
+Hoe werkt blockchain? Blockchain is een peer-to-peer technologie zoals eerder vernoemd. Dit wil zeggen dat alle data niet in één plaats is opgeslagen maar op verschillende servers of ook nodes genoemd. Zo heeft elke node zijn eigen versie van de blockchain. De reden waarom blockchain zo veilig is, is omdat de blockchain volledig geëncodeerd is door middel van een hash. Blockchain is het makkelijkst te vergelijken met een excel-blad. Elke rij in het blad is een transactie, en de transactie heeft telkens een relatie met de vorige transactie. Zo kan er dus bijvoorbeeld geen 10.000 euro getoverd worden op een bitcoin rekening aangezien deze moet gestort worden met een transactie en dus wel degelijk ergens vandaan moet komen. Hoe wordt er voorkomen dat er valse transacties worden uitgevoerd? Het hele systeem werkt aan de hand van peer-to-peer, elke server heeft dus zijn eigen versie. Telkens er een verandering wordt uitgevoerd dan wordt de blockchain verandering gebroadcast over het hele netwerk. Vervolgens gaat elke node die de transactie ontving deze gaan plaatsen in een blok. Elke node zal vervolgens een moeilijke proof-of-work genereren. Wanneer een node een proof-of-work gegenereerd heeft dan zal hij deze block versturen naar alle andere nodes in het netwerk. Vervolgens zullen de nodes het block enkel en alleen aanvaarden als alle transacties in het block kloppen en nog niet vervallen zijn. Om aan te tonen dat een node het block heeft aanvaard zal deze node de hash van deze block gebruiken in de volgende block als vorige hash. 
+
+In het algemeen zullen de nodes altijd de langste ``ketting'' aanvaarden als de correcte en zal het verder werken aan deze ketting. Wanneer twee nodes een verschillend blok gaan broadcasten dan kan het zijn dat één node de ene versie eerst zal krijgen en een andere de alternatieve versie eerst zal ontvangen. Daarom zal altijd de eerste die ontvangen werd gebruikt worden. De alternatieve versie wordt dan bijgehouden. Deze koppeling wordt onderbroken vanaf er een nieuwe proof-of-work wordt gevonden. Hierdoor zal één van de twee versies langer worden en de langste versie zal dan gebruikt worden om op verder te bouwen. De nodes die ondertussen op de andere tak aan het werken waren zullen dan ook overschakelen op deze. Dit wil natuurlijk niet zeggen dat een transactie broadcast alle nodes moeten bereiken, het blijft steeds het internet en een transactie kan verloren geraken. Dit is geen probleem zolang er maar genoeg nodes de transactie ontvangen en deze verifiëren. De nodes die die transactie niet ontvingen zullen dit merken wanneer ze de volgende blok ontvangen en zien dat ze er één hebben gemist en zal deze dan aanvragen aan de andere nodes in het netwerk. 
+
+ Wanneer er dus een aanval gebeurt op de blockchain of dus een illegale transactie plaats vindt dan kan deze verworpen worden door de andere servers. In simpele termen komt het er op neer dat zolang de totale CPU capaciteit van de servers groter is dan de capaciteit van de aanvaller dat de blockchain dus veilig is en de aanvallen zal afweren. Dit omdat de aanvaller sneller een alternatieve ketting zou moeten produceren  dan dat de vertrouwde nodes dit doen. Zelf in het geval dat dit zou gebeuren wil dit niet zeggen dat de vertrouwde nodes dit zullen accepteren aangezien dat de aanvaller ook geen waarde kan creëren uit het niets of zichzelf eigenaar kan maken van andere waarden als we dit zouden bekijken in het systeem van Bitcoins. Het enige wat een aanvaller dus in principe kan doen is het aanpassen van zijn eigen transacties, bijvoorbeeld dus geld terug nemen dat hij al eerder uitgaf. De kans dat zich dit voordoet is uitermate klein. Zo is te zien in de whitepaper van \textcite{Nakamoto2008}. Stel dat de aanvaller 10 blokken achter zit en de vertrouwde ketting moet inhalen dan heeft deze een kans van 0.0000012\% wanneer we er vanuit gaan dat de aanvaller 10 \% kans heeft om de volgende blok te vinden. Verdere berekeningen zijn te vinden in de paper van \autocite{Nakamoto2008}.
+
+\section{Stand van zaken}
+\label{sec:stand-van-zaken}
+
+%% TODO: deze sectie (die je kan opsplitsen in verschillende secties) bevat je
+%% literatuurstudie. Vergeet niet telkens je bronnen te vermelden!
+
+\lipsum[7-20]
+
+\section{Probleemstelling en Onderzoeksvragen}
+\label{sec:onderzoeksvragen}
+
+%% TODO:
+%% Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde
+%% heeft voor een concrete doelgroep (bv. een bedrijf).
+%%
+%% Wees zo concreet mogelijk bij het formuleren van je
+%% onderzoeksvra(a)g(en). Een onderzoeksvraag is trouwens iets waar nog
+%% niemand op dit moment een antwoord heeft (voor zover je kan nagaan).
+
+\section{Opzet van deze bachelorproef}
+\label{sec:opzet-bachelorproef}
+
+%% TODO: Het is gebruikelijk aan het einde van de inleiding een overzicht te
+%% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
+%% die je kan aanvullen/aanpassen in functie van je eigen tekst.
+
+De rest van deze bachelorproef is als volgt opgebouwd:
+
+In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+
+%% TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
+
+In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
+
