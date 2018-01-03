@@ -63,4 +63,20 @@
   url    = {https://www.bitcoinmining.com/getting-started/},
 }
 
+@WWW{Wikipedia-POW,
+  author = {Wikipedia},
+  title  = {Proof-of-work system},
+  year   = {2017},
+  date   = {2017-12-27},
+  url    = {https://en.wikipedia.org/wiki/Proof-of-work_system},
+}
+
+@WWW{Kravchenko2016,
+  author = {Pavel Kravchenko},
+  title  = {Ok, I need a blockchain, but which one?},
+  year   = {2016},
+  date   = {2017-09-26},
+  url    = {https://medium.com/@pavelkravchenko/ok-i-need-a-blockchain-but-which-one-ca75c1e2100},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
