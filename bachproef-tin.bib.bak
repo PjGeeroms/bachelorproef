@@ -1,29 +1,4 @@
 % Encoding: UTF-8
-@book{Knuth1998,
- author = {Knuth, Donald E.},
- title = {The art of computer programming,  volume 3: (2nd ed.) sorting and searching},
- year = {1998},
- publisher = {Addison Wesley Longman Publishing Co., Inc.},
- address = {Redwood City, CA, USA}
-}
-
-@book{Pollefliet2011,
-  author = {Pollefliet, Leen},
-  title = {Schrijven van verslag tot eindwerk: do's en don'ts},
-  year = {2011},
-  publisher = {Academia Press},
-  address = {Gent}
-}
-
-@article{Creeger2009,
-  author = {Creeger, Mache},
-  journal = {Communications of the ACM},
-  number = {8},
-  pages = {50--56},
-  title = {{CTO Roundtable: Cloud Computing}},
-  volume = {52},
-  year = {2009}
-}
 
 @Electronic{Nakamoto2008,
   author = {Satoshi Nakamoto},
@@ -63,28 +38,25 @@
   url    = {https://www.bitcoinmining.com/getting-started/},
 }
 
-@WWW{Wikipedia-POW,
-  author = {Wikipedia},
-  title  = {Proof-of-work system},
-  year   = {2017},
-  date   = {2017-12-27},
-  url    = {https://en.wikipedia.org/wiki/Proof-of-work_system},
+@WWW{Mazieres,
+  author = {David Mazieres},
+  title  = {The Stellar Consensus Protocol: A Federated Model for Internet-level Consensus},
+  url    = {https://www.stellar.org/papers/stellar-consensus-protocol.pdf},
 }
 
 @WWW{Kravchenko2016,
   author = {Pavel Kravchenko},
   title  = {Ok, I need a blockchain, but which one?},
-  year   = {2016},
   date   = {2017-09-26},
   url    = {https://medium.com/@pavelkravchenko/ok-i-need-a-blockchain-but-which-one-ca75c1e2100},
 }
 
-@WWW{Wikipedia-Sha,
-  author = {Wikipedia},
-  title  = {Sha-2},
+@WWW{Fisher2017,
+  author = {Tim Fisher},
+  title  = {What Is SHA-x?},
   year   = {2017},
-  date   = {2017-12-20},
-  url    = {https://en.wikipedia.org/wiki/SHA-2},
+  date   = {2017-10-30},
+  url    = {https://www.lifewire.com/what-is-sha-1-2626011},
 }
 
 @WWW{Buterin2013,
@@ -103,12 +75,42 @@
   url    = {https://medium.com/a-stellar-journey/on-worldwide-consensus-359e9eb3e949},
 }
 
-@WWW{,
+@WWW{Chandrayan2017,
   author = {Pramod Chandrayan},
   title  = {Blockchain Technology Part 2 : Smart Contract Fundamentals},
   year   = {2017},
   date   = {2017-08-30},
   url    = {https://codeburst.io/blockchain-technology-part-2-smart-contract-fundamentals-d243e2311f94},
+}
+
+@WWW{blockgeeks,
+  author = {blockgeeks},
+  title  = {Afbeelding van pow vs pos},
+  url    = {blockgeeks.com},
+}
+
+@WWW{blockchain.info,
+  author = {blockchain.info},
+  title  = {Blockchain Platform},
+  url    = {https://blockchain.info/},
+}
+
+@WWW{pwc.com,
+  author = {pwc.com},
+  title  = {Blockchain infographic},
+  url    = {http://usblogs.pwc.com/emerging-technology/wp-content/uploads/2016/11/blockchain-infographic.0.png},
+}
+
+@WWW{99bitcoins,
+  author = {99bitcoins},
+  title  = {Werking van multi-sig},
+  url    = {99bitcoins.com},
+}
+
+@WWW{,
+  author = {Itweb},
+  title  = {Grafisch voorbeeld smartcontracting},
+  url    = {www.itweb.co.za},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

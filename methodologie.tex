@@ -11,5 +11,100 @@
 %% mogelijke manier toegepast hebt om een antwoord te vinden op de
 %% onderzoeksvraag.
 
-\lipsum[21-25]
+\section{Opbouw}
+Aangezien er verschillende soorten types zijn van blockchains wordt ook elk type toegepast op de usecase. Er worden dus bestanden toegevoegd aan de blockchain door transacties uit te voeren. Dit systeem zal vervolgens uitwerken en de voordelen en nadelen aankaarten van elk type blockchain. De werking van hoe we juist een bestand gaan toevoegen aan de chain zal in het algemeen hetzelfde blijven en dit wordt dan ook bekijken in hoofdstuk \ref{ch:add-to-blockchain}. Vooral de werking tussen de verschillende nodes zal veranderen aangezien er telkens een ander overeenkomst algoritme zal gebruikt worden. Een ander verschil is ook dat er enerzijds documenten zoals contracten en dergelijke op een publiek netwerk zullen geplaatst worden en anderzijds op een privé netwerk. Hierdoor zal er tot 1 enkele of meerdere optimale oplossingen gekomen worden afhankelijk van de opstelling en het standpunt.
+
+Verder zullen er ook enkele tegenhangende technologieën besproken worden zoals hashgraph in hoofdstuk \ref{ch:alternative-technology}. Deze zal niet intensief onderzocht worden maar zal toch ook enkele verbeterde punten aantonen of enkele minpunten aantonen. 
+
+Tenslotte zal uit dit onderzoek onze conclusie getrokken worden en wordt bekeken welk type blockchain het meeste geschikt zou zijn om gevoelige data veilig te houden en zo optimaal mogelijk en kost effectief te laten werken. Vervolgens zal  ook de studie van de alternatieve technologiën bekeken worden en wordt er een conclusie getrokken welke technologie juist het meest geschikt is. 
+
+
+\chapter{Data}
+\label{ch:add-to-blockchain}
+
+\section{Introductie}
+Het toevoegen van data gebeurt door het uitvoeren van transacties. De transacties worden vervolgens in een blok geplaatst en verzonden over het netwerk naar elke node om deze transactie te verifiëren. Elke node werkt onafhankelijk en zal de blok voor zichzelf valideren of weigeren. Wanneer een blok gevalideerd wordt door een node zal deze de geverifiërde blok terug verzenden naar alle nodes op het netwerk om dit ook aan de andere nodes te laten weten. Hoe men de transactie valideert is door een voorafgekend algoritme toe te passen op de hash. 
+
+\section{Overeenkomst tussen nodes}
+Elke node valideert dus voor zichzelf of een bepaalde transactie correct is. Er moet uiteraard ook gecommuniceerd worden tussen de nodes om tot een akkoord te bekomen. Dit zal afhangen van het elk type blockchain die gebruikt zal worden om het meest ideaale resultaat te bekomen. In theorie kan elk algoritme gebruikt worden in elk type blockchain maar dit is niet aan te raden. Om een voorbeeld te geven is het bijvoorbeeld niet gunstig om ``proof of work'' te gebruiken in een privé netwerk met gekende nodes aangezien dit veel trager zal werken.
+
+\section{Welke data wordt toegevoegd?}
+Voornamelijk zullen er steeds documenten worden toegevoegd aan de blockchain. Bovendien is het ons doel om alle communicatie te laten verlopen via de blockchain zodat er geen communicatie vereist is buiten het systeem. Op deze manier wordt er een centraal eco-systeem opgebouwd die alle data bevat.
+
+\subsection{Beveiligen van documenten}
+Om te beginnen zal de verzekeringsagent het document moeten aanmaken en in orde maken zodat deze alle nodige gegevens bevat. Verder kan dit document met software versleuteld worden door sha256 zodat dit document verder niet meer leesbaar is. Dit document kan vervolgens verstuurd worden naar alle andere nodes om dit document te valideren. Aangezien een verzekeraar ook steeds werkt met gevoelige data zal steeds alle data versleuteld worden. 
+
+\subsubsection{Soorten beveiligingen}
+Er zijn uiteraard nog andere soorten beveiligingen beschikbaar dan sha256 zoals sha384, sha512 en nog vele meer. Momenteel is er heel wat rekenkracht nodig om sha256 te breken en dit zou heel wat tijd in beslag nemen dus voorlopig is sha256 voldoende veilig. Hierdoor zal het encoderen van de bestanden steeds gebeuren met sha256 maar moet er in gedachten worden gehouden dat dit algoritme ooit gebroken zal kunnen worden en dat er zal moeten overgestapt worden naar een meer complex algoritme zoals sha384. 
+
+\chapter{Het eco-systeem}
+\label{ch:eco-system}
+Door gebruik van enkele usecases tonen we aan waarom een centraal eco-systeem in blockchain handig en krachtig zou zijn voor alle partijen. Enkele zaken moeten beslist worden op voorhand. 
+
+\begin{itemize}
+	\item Welk type blockchain gaan we gebruiken?
+	\item Heeft elke node even veel inspraak?
+\end{itemize}
+
+\section{Publieke blockchain}
+Wanneer er  gewerkt met een publieke blockchain die toegangelijk is voor iedereen kan er meteen onderscheid gemaakt worden tussen het toepassen van regels of te werken met een systeem zonder regels. Hiermee wordt bedoelt of de ene node evenveel zeggenschap heeft als een andere willekeurige node. Aangezien dit systeem vooral bedoeld is voor het optimaliseren van het hele systeem kan dit wel gebruikt worden maar zullen er toch enkele zaken moeten aangepast worden.
+
+\subsection{Proof of work}
+Iedereen in een publiek netwerk is namelijk niet gekend. Men weet dus niet wie een transactie start of valideert of dergelijke. Niemand beheert het systeem dan ook aangezien elke node dezelfde inspraak heeft. Ook zal een publiek systeem zonder regels moeten werken aan de hand van een proof of work systeem wat dus bij elke transactie rekenkracht van de CPU zal vereisen van de nodes. Dit neemt meteen ook tijd in beslag, het hele systeem wordt dus minder performant. Het gebruik van een systeem waar iedereen dezelfde inspraak heeft lijkt dus al meteen een minder goede keuze. Verder heeft dit ook het nadeel dat er hoge transactie kosten zullen opduiken door het gebruik van een publiek netwerk. Een voordeel hieraan is natuurlijk dat er gebruik kan gemaakt worden van een bestaand netwerk en er zelf geen systeem moet opgesteld worden. 
+
+\subsection{Proof of stake}
+Aangezien er toch enkele grote partijen mee gemoeid gaan die meteen ook te vertrouwen zijn is het ook geen slecht idee om te werken met proof of stake en toch enkele nodes meer recht te geven dan andere. Zo zal een verzekeringsmaatschapij bijvoorbeeld veel documenten beheren en aanmaken en hierdoor dus ook meer inspraak hebben in het systeem. Dit lijk ook logischer dan wanneer elke node even veel inspraak heeft aangezien er toch enkele gekende partijen bij betrokken worden. Dit biedt ook meteen voldoende veiligheid aangezien verzekeringsmaatschapijen geen aanvallen en dergelijke zullen verrichten op het netwerk dit zou ook meteen strafbaar zijn. Natuurlijk blijven de hoge transactie-kosten toch nog steeds een klein minpuntje waar de terug verkregen performantie door gebruik van proof of stake een pluspunt is. 
+
+\subsection{Smart contracting}
+Wanneer er gebruik wordt gemaakt van een platform zoals Ethereum dan kan men ook gebruik maken van smart contracts. Een heel groot deel kan dus geautomatiseerd worden, bijvoorbeeld er gebeurd een accident, een cliënt upload het schadeformulier. Hier kan smart contracting gebruikt worden om een hele boel te automatiseren. Dit kan al meteen het probleem oplossen dat een cliënt nooit weet waar deze staat. Bij elke stap die wordt uitgevoerd kan er bijvoorbeeld automatisch een service aangesproken worden die de cliënt automatisch op de hoogte houdt van de stand van zaken. Bijvoorbeeld wanneer de verzekeraars contact opnemen met elkaar, wanneer er contact is opgenomen met de parij die het schadegeval zal komen waarnemen, wanneer de schaderaming is ontvangen en nog zo veel meer. 
+
+\section{Privé blockchain}
+Waar een publieke blockchain totale anonimiteit biedt zal een privé blockchain weten welke node wat heeft gedaan. Dit is ook meteen een veiligere omgeving aangezien alle nodes gekend zullen zijn. Dit is natuurlijk een pluspunt aangezien er gewerkt wordt met gevoelige informatie die niet voor iedereen bedoelt is. Aangezien er enkele partijen mee gemoeid zijn is het ook geen slechte keuze aangezien elke partij een node kan zijn. Een ander pluspunt is dat er geen proof of work meer moet gegenereerd worden en dus het syteem terug een stuk performanter wordt. Een nadeel is natuurlijk dat alle transacties door 1 partij worden beheerd. Bijvoorbeeld de overheid. Alle transacties zullen dus naar deze partij worden gestuurd voor goedkeuring en deze zal dus altijd de nieuwe blok aanmaken. Dit is uiteraard een minder gedecentraliseerd systeem en lijkt meer op een databank met extra beveiliging. 
+
+\section{Consortium blockchain}
+Het beste van 2 werelden. Consortium is een type blockchain dat tussen een publiek en een privé netwerk valt. Het netwerk is publiek maar heeft enkele instanties die gekend zijn en die het netwerk volledig beheren. Deze instanties staan ook toe wie de blockchain kan lezen en wie niet. Het hele systeem kan aanzien worden een ``raad der wijzen''. Het voordeel aan het gebruiken van een consortium blockchain is dat het niet beheerd wordt door 1 partij zoals bij een privé netwerk maar door een verzameling van partijen. 
+
+\subsection{Multi-sig}
+Het algoritme dat het meest voor de hand ligt in dit geval is Multi-sig. We geven verschillende partijen een sleutel. Zo kunnen we bijvoorbeeld de overheid zelf een sleutel geven en geven we een verzekeringsmaatschapij een sleutel. Op deze manier moeten er telkens 2 instanties goedkeuring geven aan een transactie waarvan één de overheid zelf is, uiteraard afhankelijk van de opstelling van multi-sig. In het algemeen wordt er gebruik gemaakt van een 2-of-3 opstelling. De reserve sleutel wordt dan ook opgeborgen op een offline locatie voor de veiligheid. Op deze manier is het systeem veilig tegen double spending aanvallen en dergelijke aangezien de overheid zelf telkens goedkeuring moet geven. Dus zelfs al wordt 1 partij gehackt dan zal de transactie nog steeds niet worden goedgekeurd. 
+
+\chapter{Usecases}
+\label{ch:usecases}
+In dit hoofdstuk zullen er enkele usecases opstellen en oplossen aan de hand van blockchain. Zo wordt ook meteen het hele eco-systeem getest en kan er nadien een goede conclusie worden gemaakt.
+
+\section{Tekenen van een contract}
+De cliënt wil een contract aan gaan met een verzekeraar voor het verzekeren van enkele zaken. Hiervoor maakt de verzekeringsagent een contract op die voldoet aan de eisen van zijn cliënt. Het contract wordt op de blockchain geplaatst als een transactie en zal vervolgens over het Ethereum netwerk worden gebroadcast. Elke node op het netwerk zal vervolgens het document verifiëren, bij validatie zal de transactie worden toegevoegd aan een blok. 
+
+Vroeger zou dit allemaal moeten gebeuren op kantoor waar beide personen aanwezig moeten zijn. Aangezien dit contract ook zal moeten ondertekend worden ter goedkeuring van de cliënt. 
+
+De verzekeraar zou een online platform kunnen maken die toelaat dat een cliënt zich aanmeld en een overzicht te zien krijgt van al zijn contracten. Wanneer het contract aan de blockchain werd toegevoegd kan dit ook terug uit de blockchain worden gehaald aan de hand van een versleuteld veld dat uniek is aan deze persoon. Hiervoor zou het rijksregister nummer kunnen gebruikt worden. 
+
+De cliënt krijgt op zijn beurt alle documenten te zien die voor hem bestemd zijn. Dit kan heel groot bekeken worden en kan zelfs verder gaan dan verzekeringsmaatschapij gebonden. Denk maar aan een blockchain die alle verzekeringsdocumenten bevat van een land of continent!
+
+De klant kan vervolgens via dit platform het gewenste document selecteren en tekenen. De handtekening van de klant kan gebeuren aan de hand van een EID lezer zodat deze zijn identiteit moet bevestigen om het document te kunnen tekenen. DIt is één uiteraard één van de voorwaarden die moet voldaan worden en waar controle kan naar gedaan worden aangezien dit ook kan toegevoegd worden in de transactie. 
+
+Vervolgens zal het webplatform deze handtekening digitaliseren en deze versleutelen. Nadien wordt deze transactie verzonden naar alle nodes om deze te laten verifiëren door het netwerk . Het webplatform is uiteraard ook deel van de nodes in het netwerk om deze verrichtingen te kunnen uitvoeren.
+
+Eenmaal de transactie goedgekeurd werd door het netwerk wordt deze aan de blok toegevoegd. Op deze manier is dit ook zichtbaar voor elke partij dat het contract werd goedgekeurd. 
+
+De cliënt kan dus zijn contracten van thuis digitaal tekenen en op dit moment is dit ook meteen geweten door de andere nodige instanties. Er zijn verschillende opstellingen mogelijk.
+
+\section{Aangifte van een ongeval}
+Bij een ongeval moet men een schadeformulier indienen, dit wordt ingevuld door beide partijen die betrokken waren bij het ongeval of meerdere partijen indien het gaat om een grootschalig accident. Uiteindelijk moet elke betrokkene dit op zijn beurt ook aangeven aan zijn verzekeringsmaatschapij. Vanaf hier wordt alles intern uitgewerkt tussen de verzekeringsmaatschapijen die elkaar moeten contacteren, vervolgens nog een partij moet contacteren om de schade van de voertuigen op te nemen en tenslotte te bekijken welke partij in fout gesteld wordt. 
+
+Ook deze usecase is perfect uit te werken met blockchain. Iedere betrokkene dient zijn formulier in. Dit wordt vervolgens gevalideerd door het netwerk en toegevoegd aan een blok. Hiervoor is natuurlijk vereist dat deze personen ook toegang hebben tot de blockchain. Een platform is dus in dit geval nodig. Een andere oplossing is om de aangifte zelf nog via de verzekeraar aan te geven. Deze kan dan vervolgens de aangifte toevoegen aan de blockchain. Een methode van validatie is ook meteen wanneer alle andere partijen hetzelfde document toevoegen aan de blockchain. Het is ook meteen mogelijk om al deze aangiftes te bundelen op deze manier. Zo kan elke maatschapij een eigen identificatie token hebben en worden de nodige partijen op de hoogte gebracht door de blockchain te doorlopen en te bekijken of deze hun identificatie token bevat. Meteen is ook geweten welke andere partijen betrokken zijn en bovendien ook welke personen. Het dubbel opeisen van een schadeclaim wordt hierdoor al meteen niet meer mogelijk. 
+
+Men kan dus de aangifte aanzien als 1 groot document die alle partijen bevat. Dit lost al meteen een groot deel van de communicatie problemen op. Wanneer één partij vervolgens een verandering aanbrengt door het toevoegen van een document of dergelijke is dit meteen ook te zien door de andere partijen. Zo kan men ook meteen een document toevoegen met gegevens van de partij die de expertise zal uitvoeren. Wanneer de expertise werd uitgevoerd kan ook deze partij  meteen het document met de geschate kosten toevoegen aan de blockchain. Op deze manier weten alle partijen ook wie wat moet betalen aan welke partij.
+
+Door meteen ook de betrokkene personen toegang te geven tot een platform kunnen deze het volledige process volgen en wordt men sneller op de hoogte gehouden. Ook zal het oplossen van dossiers sneller opgelost worden op deze manier. 
+
+\section{Aankoop van een nieuwe wagen}
+Wanneer men een auto aankoopt en deze wil laten in verkeer stellen en verzekeren is er een heleboel papierwerk nodig. Zo moet er een nummerplaat worden aangevraagd indien deze nog niet ter beschikking is, je moet je wagen zelf later verzekeren, je wagen moet aangegeven worden om deze in het verkeer te stellen. Dit is meteen een heleboel documenten die samen één doel hebben. Het toelaten voor met een wagen op de openbare weg te rijden. Dit kan natuurlijk allemaal makkelijker gemaakt worden door gebruik van blockchain. 
+
+Zo worden de papieren verzekeringspapieren bijvoorbeeld overbodig alsook documenten van in verkeerstelling. Men kan een wagen laten verzekeren bij een verzekeraar, vervolgens kan deze de aanvraag toevoegen aan de blockchain. Alle andere partijen zien hierdoor ook meteen op de hoogte van de aanvraag en kunnen deze meteen verwerken. Het is hierdoor dus ook meteen niet langer nodig om een papieren verzekeringsbewijs of inschrijvingsbewijs bij te houden in de wagen of te wachten tot je de juiste papieren ontvangen hebt.
+
+Bij een politiecontrole is het bijvoorbeeld ook mogelijk om de gegevens op te halen via een applicatie en te kijken of alle documenten in orde zijn van de wagen aangezien alle documenten meteen gegroepeerd zijn. 
+
+\chapter{Alternatieve Technologieën}
+\label{ch:alternative-technology}
+
 
