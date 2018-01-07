@@ -1,0 +1,150 @@
+%==============================================================================
+% Sjabloon onderzoeksvoorstel bachelorproef
+%==============================================================================
+% Gebaseerd op LaTeX-sjabloon ‘Stylish Article’ (zie voorstel.cls)
+% Auteur: Jens Buysse, Bert Van Vreckem
+
+% TODO: Compileren document:
+% 1) Vervang ‘naam_voornaam’ in de bestandsnaam door je eigen naam, bv.
+%    buysse_jens_voorstel.tex
+% 2) latexmk -pdf naam_voornaam_voorstel.tex
+% 3) biber naam_voornaam_voorstel
+% 4) latexmk -pdf naam_voornaam_voorstel.tex (1 keer)
+
+\documentclass[fleqn,10pt]{voorstel}
+\usepackage{biblatex}
+\bibliography{/biblio}
+\setcounter{secnumdepth}{5}
+\title{Bachelorproef voorstel}
+
+%------------------------------------------------------------------------------
+% Metadata over het artikel
+%------------------------------------------------------------------------------
+
+\JournalInfo{HoGent Bedrijf en Organisatie} % Journal information
+\Archive{Onderzoekstechnieken 2016 - 2017} % Additional notes (e.g. copyright, DOI, review/research article)
+
+%---------- Titel & auteur ----------------------------------------------------
+
+% TODO: geef werktitel van je eigen voorstel op
+\PaperTitle{Blockchain: Toepassingen bij verzekeringsmakelaar}
+\PaperType{Onderzoeksvoorstel Bachelorproef} % Type document
+
+% TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
+\Authors{Pieter-Jan Geeroms\textsuperscript{1}} % Authors
+\affiliation{\textbf{Contact:}
+  \textsuperscript{1} \href{mailto:pieterjan.geeroms.u1457@student.hogent.be}{pieterjan.geeroms.u1457@student.hogent.be};
+ }
+
+%---------- Abstract ----------------------------------------------------------
+
+  \Abstract{
+  Blockchain is een opkomende technologie die vele toepassingen zal hebben in de nabije toekomst. Het doel van de bachelorproef zal inhouden om enkele toepassingen te onderzoeken voor het toepassen van blockchain bij een verzekeringsmakelaar.   }
+
+%---------- Onderzoeksdomein en sleutelwoorden --------------------------------
+% TODO: Sleutelwoorden:
+%
+% Het eerste sleutelwoord beschrijft het onderzoeksdomein. Je kan kiezen uit
+% deze lijst:
+%
+% - Mobiele applicatieontwikkeling
+% - Webapplicatieontwikkeling
+% - Applicatieontwikkeling (andere)
+% - Systeem- en netwerkbeheer
+% - Mainframe
+% - E-business
+% - Databanken en big data
+% - Machine learning en kunstmatige intelligentie
+% - Andere (specifieer)
+%
+% De andere sleutelwoorden zijn vrij te kiezen
+
+\Keywords{Big data. Blockchain --- Verzekeringsmakelaar --- Databases --- Voordelen --- Nadelen} % Keywords
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+
+%---------- Titel, inhoud -----------------------------------------------------
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%------------------------------------------------------------------------------
+% Hoofdtekst
+%------------------------------------------------------------------------------
+
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+\label{sec:introductie}
+
+%\begin{wrapfigure}{l}{2.5cm} %this figure will be at the right
+%   \centering
+%   \includegraphics[width=2.5cm, height=2.5cm]{phonegap}
+%    \caption{Phonegap logo}
+%\end{wrapfigure}
+
+Blockchain is een opkomende technologie waar de grote KMO's stilaan naar toe beginnen werken. Zo is het nuttig om blockchain te begrijpen aangezien deze technologie al veel gebruikt wordt en de komende jaren enkel zal toenemen. Denk maar aan banken, aandelenbeurzen, muziek, diamanten, verzekeringen, internet of things (IOT) en nog zoveel meer. Zo heeft blockchain vele voordelen die besproken zullen worden in deze paper en worden de nadelen van deze technologie ook besproken na het uitvoeren van een grondige literatuurstudie over blockchain en het onderzoeken van de taken van een verzekeringsmakelaar.
+
+%---------- Stand van zaken ---------------------------------------------------
+\newpage
+\section{Taak}
+\label{sec:state-of-the-art}
+\subsection{Theoretisch onderzoek}
+Tijdens de bachelorproef zal ik de werking van Blockchain onderzoeken en een literatuurstudie opstellen. Bovendien zal ik ook enkele negatieve punten van blockchain boven halen en hiervoor een alternatief voorzien of een manier bedenken hoe deze zouden kunnen verbeterd worden. Ook zal ik een korte studie verrichten die het werk van een verzekeringsmakelaar zal bestuderen om te bekijken op welke taken Blockchain misschien kan toegepast worden. Ook zal ik bekijken of dit een verbetering is na het gebruik van Blockchain in vergelijking met hiervoor. Dit aan de hand van parameters zoals veiligheid, juistheid en eventueel snelheid al is dit soms niet altijd even meetbaar.
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{blockchain}
+    \caption{Blockchain overzicht}
+\end{figure}
+
+\newpage
+\subsubsection{Onderzoeksvragen}
+\begin{itemize}
+\item Mogelijkheid om blockchain toe te passen op andere sectoren dan een digitale munteenheid?
+\item Hoe kan men bij een verzekeringsmakelaar de  contracten vervangen door blockchain toe te passen?
+\item Hoe kan men expertise verslagen veiliger maken door toepassing van blockchain?
+\item Hoe kan men bij een verzekeringsmakelaar het dubbel opeisen van een schadeclaim voorkomen door toepassing van blockchain?
+\end{itemize}
+
+\subsection{Praktijk voorbeeld}
+Het uitwerken om contracten, expertise verslagen en schadeclaims veiliger en eenvoudiger in beheer te maken voor een verzekeringsmakelaar m.a.w. het opslaan van belangrijke unieke documenten in blockchain.
+\newline
+
+\newpage
+\section{Verwachtingen}
+Uit het onderzoek verwacht ik blockchain beter te begrijpen en ook gebruik te kunnen maken van deze technologie. Dit lijkt mij zeer handig als referentie om kennis te hebben van deze technologie. Zoals eerder besproken wordt deze technologie elk jaar populairder en zit hier ook veel potentieel in.
+
+\section{Conclusie}
+Ik hoop dat mijn conclusie op het einde van deze bachelorproef uiteraard positief zal zijn en wel degelijk de toekomst van deze technologie verder zal ondersteunen. Zo hoop ik de beste oplossing te vinden om offici\"ele documenten veilig te kunnen opslaan met behulp van blockchain zodat het bijvoorbeeld heel lastig wordt om deze documenten te vervalsen, denk maar aan verzekeringspapieren voor de wagen!
+
+\section{Perspectief}
+De toekomst van deze technologie is in mijn ogen eindeloos. Deze technologie heeft heel veel potentieel om een heel grote impact te hebben op de samenleving, wanneer een bepaalde technologie zelfs bepaalde jobs kan vervangen en dus ook een grote impact kan hebben op de samenleving en misschien zelfs kan gebruikt worden voor bepaalde applicaties die op het moment van dit schrijven nog niet aan gedacht geweest is, heeft deze technologie zeker veel potentieel. Ook omdat deze technologie effectief al gebruikt wordt in grotere bedrijven zoals banken en aandelenbeurzen ben ik zeker dat deze technologie het onderzoek zeker waard is.
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+%------------------------------------------------------------------------------
+% Referentielijst
+%------------------------------------------------------------------------------
+% TODO: de gerefereerde werken moeten in BibTeX-bestand ``biblio.bib''
+% voorkomen. Gebruik JabRef om je bibliografie bij te houden en vergeet niet
+% om compatibiliteit met Biber/BibLaTeX aan te zetten (File > Switch to
+% BibLaTeX mode)
+
+\phantomsection
+\section{Referenties}
+1. https://blockchain.info/ \newline
+2. https://en.wikipedia.org/wiki/Blockchain \newline
+3. http://www.investopedia.com/terms/b/blockchain.asp \newline
+4. https://www.brookings.edu/blog/techtank/2015/01/13/the-blockchain-what-it-is-and-why-it-matters/ \newline
+5. http://mitsloan.mit.edu/newsroom/articles/blockchain-explained/ \newline
+6. https://www.gsa.gov/technology/government-it-initiatives/emerging-citizen-technology/blockchain \newline
+\printbibliography
+
+\end{document}
